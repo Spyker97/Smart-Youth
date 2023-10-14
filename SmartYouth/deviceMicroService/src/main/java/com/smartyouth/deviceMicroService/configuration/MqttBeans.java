@@ -2,6 +2,7 @@ package com.smartyouth.deviceMicroService.configuration;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import org.springframework.beans.factory.annotation.Value;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,15 +23,19 @@ import org.springframework.messaging.MessagingException;
 @Configuration
 public class MqttBeans {
 
-    String clientId = "springunique12" ;//serverIn  //serverOut
-    String clientId2 = "springunique122" ;
+    @Value("${myapp.api.key}")
+    String clientId  ;//serverIn  //serverOut
+    @Value("${addfruit.api.clientin}")
+    String clientId2 ;
+    @Value("${addfruit.api.clientout}")
+    String key ;
 
     public MqttPahoClientFactory mqttPahoClientFactory(){
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
         options.setServerURIs(new String[] {"tcp://io.adafruit.com:1883"});//{"tcp://localhost:1883"});
         options.setUserName("oussama111"); //admin
-        String pass = "aio_ogvT18sykBrvzfmDIu3IfZrkMOPf";//12345678
+        String pass = key;//12345678
 
 
          options.setPassword(pass.toCharArray());
