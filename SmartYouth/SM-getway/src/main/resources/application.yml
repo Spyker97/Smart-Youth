@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+
+        - id: ALARME-MODULE
+          uri: lb://ALARME-MODULE
+          predicates:
+            - Path=/alarme/**
+          filters:
+            - AuthenticationFilter
+
+
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/auth/**
+
+
+        - id: discovery-server
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/**
+
+
+  application:
+    name: API-GETWAY
+server:
+  port: 8080
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
