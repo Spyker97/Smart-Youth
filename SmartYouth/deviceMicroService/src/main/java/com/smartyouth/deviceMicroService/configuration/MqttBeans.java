@@ -23,12 +23,12 @@ import org.springframework.messaging.MessagingException;
 @Configuration
 public class MqttBeans {
 
-    @Value("${myapp.api.key}")
-    String clientId  ;//serverIn  //serverOut
     @Value("${addfruit.api.clientin}")
-    String clientId2 ;
+    private String clientId  ;//serverIn  //serverOut
     @Value("${addfruit.api.clientout}")
-    String key ;
+    private String clientId2 ;
+    @Value("${addfruit.api.key}")
+    private String key ;
 
     public MqttPahoClientFactory mqttPahoClientFactory(){
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
