@@ -4,10 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
+
+        <module>deviceMicroService</module>
+
         <module>usermicroservice</module>
         <module>alarme-module</module>
         <module>SM-getway</module>
         <module>discovery-server</module>
+
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
