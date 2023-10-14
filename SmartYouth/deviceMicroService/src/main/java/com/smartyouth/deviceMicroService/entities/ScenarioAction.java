@@ -23,6 +23,7 @@ public class ScenarioAction {
     Scenario scenario ;
 
     @ManyToOne
+    @JsonIgnore
     Device device ;
     Boolean action ;
 }

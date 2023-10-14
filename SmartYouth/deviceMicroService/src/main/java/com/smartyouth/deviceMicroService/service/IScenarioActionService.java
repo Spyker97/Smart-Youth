@@ -11,4 +11,6 @@ public interface IScenarioActionService {
     public ScenarioAction add(ScenarioAction scenarioAction);
     public Response addAll(List<ScenarioAction> scenarioActionList , List<Device> listeDevice , Integer scenarioId);
     public List<ScenarioAction> showAll();
+
+    public List<ScenarioAction> getActionByScenario(Integer scenarioId);
 }

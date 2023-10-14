@@ -48,4 +48,9 @@ public class ScenarioActionService implements IScenarioActionService{
     public List<ScenarioAction> showAll() {
         return scenarioActionRepository.findAll();
     }
+
+    @Override
+    public List<ScenarioAction> getActionByScenario(Integer scenarioId) {
+        return scenarioActionRepository.findAllByScenario_Id(scenarioId) ;
+    }
 }

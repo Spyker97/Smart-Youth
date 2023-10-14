@@ -30,7 +30,7 @@ public class MqttBeans {
         MqttConnectOptions options = new MqttConnectOptions();
         options.setServerURIs(new String[] {"tcp://io.adafruit.com:1883"});//{"tcp://localhost:1883"});
         options.setUserName("oussama111"); //admin
-        String pass = "aio_aQjo03caH662SWwcks1po9JRla9h";//12345678
+        String pass = "aio_ogvT18sykBrvzfmDIu3IfZrkMOPf";//12345678
 
 
          options.setPassword(pass.toCharArray());

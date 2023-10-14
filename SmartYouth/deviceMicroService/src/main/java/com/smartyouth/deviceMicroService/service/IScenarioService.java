@@ -9,4 +9,6 @@ public interface IScenarioService {
     Scenario addScenario(Scenario scenario);
     List<Scenario> getAllScenarion();
     Scenario getById(Integer id);
+    void fetchScenario();
+
 }
