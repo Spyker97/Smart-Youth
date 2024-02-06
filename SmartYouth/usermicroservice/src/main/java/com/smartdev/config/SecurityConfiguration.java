@@ -24,7 +24,7 @@ public class SecurityConfiguration {
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .antMatchers("/auth/**") //give access for path withoud athentificate exp to signUP
+                .antMatchers("/auth/**","/testjs/**") //give access for path withoud athentificate exp to signUP
                 .permitAll()
                 .anyRequest()
                 .authenticated()

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/SM-getway/SM-getway.iml" filepath="$PROJECT_DIR$/SmartYouth/SM-getway/SM-getway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Smart-Youth.iml" filepath="$PROJECT_DIR$/.idea/Smart-Youth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/SmartYouth.iml" filepath="$PROJECT_DIR$/SmartYouth/SmartYouth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/alarme-module/alarme-module.iml" filepath="$PROJECT_DIR$/SmartYouth/alarme-module/alarme-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/deviceMicroService/deviceMicroService.iml" filepath="$PROJECT_DIR$/SmartYouth/deviceMicroService/deviceMicroService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/SmartYouth/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartYouth/usermicroservice/usermicroservice.iml" filepath="$PROJECT_DIR$/SmartYouth/usermicroservice/usermicroservice.iml" />
+    </modules>
+  </component>
+</project>

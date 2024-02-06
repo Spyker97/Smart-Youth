@@ -16,11 +16,17 @@ spring:
           predicates:
             - Path=/auth/**
 
+        - id: testjs
+          uri: lb://testjs
+          predicates:
+            - Path=/testjs/**
+          filters:
+            - AuthenticationFilter
 
   application:
     name: API-GETWAY
 server:
-  port: 8080
+  port: 8083
 
 
 eureka:

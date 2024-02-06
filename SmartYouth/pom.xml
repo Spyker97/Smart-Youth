@@ -6,7 +6,7 @@
     <modules>
 
         <module>deviceMicroService</module>
-
+        <module>projectVueJs</module>
         <module>usermicroservice</module>
         <module>alarme-module</module>
         <module>SM-getway</module>
